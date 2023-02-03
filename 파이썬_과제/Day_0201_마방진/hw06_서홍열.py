@@ -1,7 +1,17 @@
 def _():
 
+    while True:
+        try :
+            n=int(input('홀수차 배열의 크기를 입력하세요 : '))
+        except :
+            continue
+        
+        if n%2==0:
+            print('다시 입력하세요.')
+        else:
+            break
+
     count = 1
-    n = 3
 
     #행 #열
     y = 0
@@ -20,23 +30,18 @@ def _():
             count += 1
             y -= 1
             x += 1 
-            print('test1')
-            print(f'{count} 번째 {squre}')
 
         else : 
-            print(y, x)
+            # print(y, x)
             y+=2
             x-=1
-            print(y, x)
-            print("끝")
 
         if y == -1:
             y = n - 1
         elif y >= n:
-            #질문
-            print(f'질문{y,x}')
+            #패턴
             y %= n
-            print(f'질문끝{y,x}')
+
 
         if x >= n:
             x = 0
