@@ -23,7 +23,7 @@ def magicsquare(size):
     next_j = 0
     num = 1
     print("Magic Square ({0}x{1})".format(size, size))
-    matrix = [[0]*size for i in range(size)]
+    matrix = [[0]*size for i in range(size)] #2차원배열
 
     for x in range(size*size):
         matrix[i][j] = num      # (0, 2)에 1을 대입

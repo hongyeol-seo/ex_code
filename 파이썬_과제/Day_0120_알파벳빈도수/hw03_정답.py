@@ -25,10 +25,10 @@ def draw_barchart_dict(path, outfile, upper_dict, lower_dict):
     else:
         print('Unsupported System')
 
-    # subplot 사용    
-    # figsize=(x, y)  
-    # fig, axes=plt.subplots(1, 2, figsize=(20, 10))
-    # fig.suptitle(f'알파벳 카운트: {outfile}')
+    #subplot 사용    
+    figsize=(x, y)  
+    fig, axes =plt.subplots(1, 2, figsize=(20, 10))
+    fig.suptitle(f'알파벳 카운트: {outfile}')
 
     # 대문자 bar chart 
     plt.subplot(1, 2, 1)
